@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	
+	<h1>Event method</h1>
+	<div id="mydiv" style="width :200px; height :200px background-color:blurlywood">
+
+<a href="http://www.twitter.com" id="mylink">click</a>
+</div>
+
+<script type="text/javascript">
+	function stopLink();
+	{
+		e.preventDefault();
+	}
+	function div1(e)
+	{
+		this.style.backgroundColor='orange';
+	}
+	var d=document.getElementById("mydiv");
+	var l=document.getElementById("myLink");
+	d.addEventListener("click",div1,false);
+	l.addEventListener("click",stopLink,false);
+</script>
+</body>
+</html>
